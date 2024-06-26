@@ -2,8 +2,9 @@
 
 namespace App\Http;
 
-use App\Http\Middleware\CheckRole;
+use App\Http\Middleware\LogRequest;
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
+use Illuminate\Support\Facades\Log;
 
 class Kernel extends HttpKernel
 {
@@ -22,6 +23,7 @@ class Kernel extends HttpKernel
         \Illuminate\Foundation\Http\Middleware\ValidatePostSize::class,
         \App\Http\Middleware\TrimStrings::class,
         \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
+        LogRequest::class,
     ];
 
     /**
