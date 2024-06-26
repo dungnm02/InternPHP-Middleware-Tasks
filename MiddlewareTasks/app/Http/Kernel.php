@@ -2,11 +2,7 @@
 
 namespace App\Http;
 
-<<<<<<< Updated upstream
-=======
-use App\Http\Middleware\CheckRole;
 use App\Http\Middleware\LogRequest;
->>>>>>> Stashed changes
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 use Illuminate\Support\Facades\Log;
 
